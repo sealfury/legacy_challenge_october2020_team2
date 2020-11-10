@@ -31,3 +31,11 @@ gem 'loofah', '~> 2.2.1'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 gem 'sprockets', '~> 3.7.2'
 
+group :development, :test do
+ gem 'rspec-rails'
+ gem 'shoulda-matchers'
+ gem 'factory_bot_rails'
+ gem 'capybara'
+ gem 'pry-rails'
+ gem 'coveralls', require: false
+end
