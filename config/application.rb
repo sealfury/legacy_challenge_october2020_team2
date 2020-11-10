@@ -24,7 +24,7 @@ module Mailboxer
       generate.routing_specs false
       generate.controller_specs false
       generate.request_specs false
-      #generate.test_framework :rspec
+      generate.test_framework :rspec
     end
   end
 end
