@@ -25,5 +25,8 @@
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
 
+# Coveralls
+coverage/
+
 
 
