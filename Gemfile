@@ -38,4 +38,6 @@ group :development, :test do
  gem 'capybara'
  gem 'pry-rails'
  gem 'coveralls', require: false
+ gem 'webdrivers'
+ gem 'selenium-webdriver'
 end
