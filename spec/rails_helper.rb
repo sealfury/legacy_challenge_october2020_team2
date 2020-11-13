@@ -21,7 +21,6 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   config.include FactoryBot::Syntax::Methods
   config.include Warden::Test::Helpers
-
 end
 
 Shoulda::Matchers.configure do |config|
