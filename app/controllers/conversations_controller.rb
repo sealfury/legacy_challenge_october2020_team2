@@ -6,9 +6,14 @@ class ConversationsController < ApplicationController
 
   def create
     recipients = User.where(id: conversation_params[:recipients])
+    if
+    conversation_params[:body].present?
     conversation = current_user.send_message(recipients, conversation_params[:body], conversation_params[:subject]).conversation
     flash[:success] = 'Your message was successfully sent!'
     redirect_to conversation_path(conversation)
+    else
+    redirect_to mailbox_inbox_path, notice: 'Please write a message'
+    end
   end
 
   def show
